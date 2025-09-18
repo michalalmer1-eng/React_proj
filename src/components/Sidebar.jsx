@@ -1,10 +1,12 @@
-import "../css/Sidebar.css"; // קובץ עיצוב נפרד
-function Sidebar({ onSelect }) {
+import "../css/Sidebar.css";
+import { Link } from "react-router-dom";
+
+function Sidebar() {
   return (
     <aside className="sidebar">
-      <button onClick={() => onSelect("home")}>🏠 Home</button>
-      <button onClick={() => onSelect("stats")}>📊 Stats</button>
-      <button onClick={() => onSelect("about")}>ℹ️ About</button>
+      <Link to="/">🏠 Home</Link>
+      <Link to="/Stats">📊 Stats</Link>
+      <Link to="/about">ℹ️ About</Link>
     </aside>
   );
 }

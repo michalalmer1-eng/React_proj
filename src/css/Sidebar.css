@@ -1,17 +1,19 @@
 .sidebar {
     width: 230px;
-    background: linear-gradient(180deg, #ffc1c1, #ffe9e9);
+    height: 100vh; /* תופס את כל הגובה של החלון */
+    background: linear-gradient(180deg, #3ab4ec, #ffe9e9);
     padding: 25px 20px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    position: fixed; /* כבר היה fixed */
+    top: 0; /* מתחיל מהחלק העליון */
+    left: 0; /* יישור לשמאל */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    border-radius: 16px;
-    margin-top: 22vh;
+    border-radius: 0 16px 16px 0; /* פינות עגולות רק בצד החיצוני */
+    margin: 0; /* הסרת margin-top */
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 1000; /* כדי להיות מעל תוכן אחר */
 }
 
 .sidebar button {
@@ -33,12 +35,12 @@
 }
 
 .sidebar button:hover {
-    background: #ffb6b6;
+    background: #65d5f7;
     transform: translateX(8px);
     box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
 .sidebar button:active {
-    background: #ff8a8a;
+    background: #70aff7;
     transform: scale(0.97);
 }

@@ -2,11 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #ffe9e9, #ffc1c1);
+    background: linear-gradient(135deg, #ffe9e9,#65d5f7);
     padding: 18px 40px;
     color: #000;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-bottom: 3px solid #ffb6b6;
+    border-bottom: 3px solid #6dadfa;
 }
 
 .header h1 {
@@ -44,12 +44,12 @@
     bottom: -4px;
     width: 0%;
     height: 2px;
-    background: #ff7b7b;
+    background: #4ac0f3;
     transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ff7b7b;
+    color: #7bc6ff;
 }
 
 .nav-links a:hover::after {
