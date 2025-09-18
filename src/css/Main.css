@@ -1,0 +1,93 @@
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ffd6d6;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.current {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.mood-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 25px 0;
+}
+
+.mood-item button {
+    background: linear-gradient(135deg, #ffe9e9, #ffc1c1);
+    border: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.mood-item button:hover {
+    background: #ff9b9b;
+    transform: scale(1.07);
+}
+
+.mood-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+.actions {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.actions button {
+    background: linear-gradient(135deg, #ffe9e9, #ffc1c1);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.actions button:hover {
+    background: #ff9b9b;
+    transform: scale(1.07);
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    margin: 8px 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
